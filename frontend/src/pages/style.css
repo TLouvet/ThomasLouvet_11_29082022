@@ -1,0 +1,35 @@
+.caca {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1350px) {
+
+  #graphs {
+    margin-right: 0 !important;
+  }
+
+  .prout {
+    padding-left: 0 !important;
+  }
+
+  #eheheh {
+    padding-left: 20px !important;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  #keyneeds {
+    display: flex;
+  }
+
+  .caca {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .caca {
+    margin-bottom: 21px;
+  }
+}
