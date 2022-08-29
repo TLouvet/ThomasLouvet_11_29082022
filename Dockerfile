@@ -1,8 +1,6 @@
-FROM node:lts-alpine
+FROM node:12.22
 
 ADD . /app/
 WORKDIR /app
-
-RUN yarn
 
 EXPOSE 3000
