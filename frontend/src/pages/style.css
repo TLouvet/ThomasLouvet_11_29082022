@@ -1,3 +1,7 @@
+#graphs {
+  width: 75%;
+}
+
 @media screen and (max-width: 1350px) {
 
   #graphs {
@@ -6,5 +10,11 @@
 
   #eheheh {
     padding-left: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #graphs {
+    width: 95%;
   }
 }

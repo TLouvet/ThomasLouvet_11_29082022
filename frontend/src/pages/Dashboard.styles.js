@@ -15,6 +15,7 @@ export const StyledSmallChartsContainer = styled.div`
 	display: grid;
 	column-gap: 30px;
 	grid-template-columns: repeat(3, 260px);
+  justify-content: space-between;
 	margin-top: 30px;
 	margin-bottom: 50px;
 	@media screen and (max-width: 1200px) {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledCardContainer = styled.div`
+export const StyledCardContainer = styled.article`
 	padding: 32px;
 	padding-right: 50px;
 	background-color: #fbfbfb;
