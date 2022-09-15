@@ -9,8 +9,9 @@ import {
 } from 'recharts';
 import { useGetData } from '../../hooks/useGetData';
 import { StyledBarChart } from './DailyActivityChart.styles';
-import { renderLegend, renderTooltip } from './utils';
 import PropTypes from 'prop-types';
+import { RenderTooltip } from './RenderTooltip';
+import { RenderLegend } from './RenderLegend';
 
 /**
  * @param {string} id
@@ -47,8 +48,8 @@ export const DailyActivityChart = ({ id }) => {
           tickCount={3}
         />
         <YAxis yAxisId="left" dataKey="calories" hide={true} />
-        <Tooltip cursor={{ opacity: 0.5 }} content={renderTooltip} />
-        <Legend verticalAlign="top" align="left" content={renderLegend} />
+        <Tooltip cursor={{ opacity: 0.5 }} content={<RenderTooltip />} />
+        <Legend verticalAlign="top" align="left" content={<RenderLegend />} />
         {barProps.map((props, i) => (
           <Bar key={`bar-${i}`} {...props} barSize={8} radius={[5, 5, 0, 0]} />
         ))}

@@ -1,4 +1,4 @@
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis } from 'recharts';
+import { Radar, PolarGrid, PolarAngleAxis } from 'recharts';
 import { useGetData } from '../../hooks/useGetData';
 import PropTypes from 'prop-types';
 import { RADAR_CATEGORIES } from '../../constants';

@@ -1,5 +1,6 @@
 import { StyledLegend, StyledLegendNumber } from './UserGoalsPieChart.styles';
 import PropTypes from 'prop-types';
+import { APP_TEXT } from '../../constants';
 
 /**
  * @param {number} score 
@@ -7,8 +8,7 @@ import PropTypes from 'prop-types';
  */
 export const RenderLegend = ({ score }) => (
   <StyledLegend>
-    <StyledLegendNumber>{score * 100}%</StyledLegendNumber> de votre
-    objectif
+    <StyledLegendNumber>{score * 100}{APP_TEXT['units']['percent']}</StyledLegendNumber> {APP_TEXT['pieChart']['legend']}
   </StyledLegend>
 );
 

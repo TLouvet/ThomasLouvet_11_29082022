@@ -1,3 +1,4 @@
+import { APP_TEXT } from "../../constants";
 import { StyledTooltipContainer, StyledTooltipValue } from "./UserSessionsMeanChart.styles";
 
 /**
@@ -12,7 +13,7 @@ export const RenderTooltip = (props) => {
   return (
     <StyledTooltipContainer >
       <StyledTooltipValue>
-        {props.payload[0].value} min
+        {props.payload[0].value} {APP_TEXT["units"]["minutes"]}
       </StyledTooltipValue>
     </StyledTooltipContainer>
   );

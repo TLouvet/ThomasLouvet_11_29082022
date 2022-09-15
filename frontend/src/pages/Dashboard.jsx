@@ -9,6 +9,7 @@ import { UserSessionsMeanChart } from '../components/UserSessionsMeanChart';
 
 import { KeyNeeds } from '../components/KeyNeeds';
 import { StyledGraphSection, StyledMain, StyledMainTitle, StyledRightBottomPart, StyledRightPartContainer, StyledRightUpperPart, StyledSmallChartsContainer, StyledUserName, StyledWelcomeSentence } from './Dashboard.styles';
+import { APP_TEXT } from '../constants';
 
 export const Dashboard = () => {
   const { id } = useParams();
@@ -26,12 +27,8 @@ export const Dashboard = () => {
         <VerticalBar />
         <StyledRightPartContainer>
           <StyledRightUpperPart>
-            <StyledMainTitle>
-              Bonjour {<StyledUserName>{user?.userInfos?.firstName}</StyledUserName>}
-            </StyledMainTitle>
-            <StyledWelcomeSentence>
-              Félicitation ! Vous avez explosé vos objectifs hier 👏
-            </StyledWelcomeSentence>
+            <StyledMainTitle>{APP_TEXT["hello"]} {<StyledUserName>{user?.userInfos?.firstName}</StyledUserName>}</StyledMainTitle>
+            <StyledWelcomeSentence>{APP_TEXT["welcome"]}</StyledWelcomeSentence>
           </StyledRightUpperPart>
           <StyledRightBottomPart>
             <StyledGraphSection key='graphs'>
