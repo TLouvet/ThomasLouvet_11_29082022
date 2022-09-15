@@ -4,6 +4,7 @@
 
 <p> NodeJS and npm must be installed to launch the app. You can find it here: <a href="https://nodejs.org/en/">NodeJS </a> </p>
 <p> This project was built with Node version is 16.14.2 and the npm version 8.5.0 </p>
+<p> It uses React with CRA </p>
 
 <h2>Downloading the project</h2>
 
