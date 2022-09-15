@@ -10,6 +10,7 @@ import {
 import { useGetData } from '../../hooks/useGetData';
 import { StyledBarChart } from './DailyActivityChart.styles';
 import { renderLegend, renderTooltip } from './utils';
+import PropTypes from 'prop-types';
 
 /**
  * @param {string} id
@@ -54,4 +55,8 @@ export const DailyActivityChart = ({ id }) => {
       </StyledBarChart>
     </ResponsiveContainer>
   );
+};
+
+DailyActivityChart.propTypes = {
+  id: PropTypes.string.isRequired,
 };

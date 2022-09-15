@@ -1,4 +1,4 @@
-<h1>SportSee Project</h1>
+<h1>SportSee Project Frontend</h1>
 
 <h2>Prerequisites</h2>
 

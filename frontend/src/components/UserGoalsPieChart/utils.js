@@ -1,5 +1,5 @@
 /**
- * Pie sectors array
+ * Pie sectors array formating
  * @param {number} score
  * @returns {{name: string, value: number}[]}
  */

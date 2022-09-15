@@ -16,5 +16,4 @@ export const RenderTooltip = (props) => {
       </StyledTooltipValue>
     </StyledTooltipContainer>
   );
-
 };

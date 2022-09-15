@@ -1,6 +1,7 @@
 import { DailyNeedCard } from '../DailyNeedCard/DailyNeedCard';
-import { StyledSection } from './Keyneeds.style';
+import { StyledSection } from './Keyneeds.styles';
 import { formatData } from './utils';
+import PropTypes from 'prop-types';
 
 /**
  * @param {{
@@ -12,21 +13,28 @@ import { formatData } from './utils';
  * @returns
  */
 export const KeyNeeds = ({ data }) => {
-	const cards = formatData(data);
+  const cards = formatData(data);
 
-	return (
-		<StyledSection>
-			{cards.map((card) => (
-				<DailyNeedCard
-					key={card.name}
-					image={card.image}
-					background={card.background}
-					value={card.value}
-					name={card.name}
-				/>
-			))}
-		</StyledSection>
-	);
+  return (
+    <StyledSection>
+      {cards.map((card) => (
+        <DailyNeedCard
+          key={card.name}
+          image={card.image}
+          background={card.background}
+          value={card.value}
+          name={card.name}
+        />
+      ))}
+    </StyledSection>
+  );
 };
 
-// TODO -- Add Proptypes
+KeyNeeds.propTypes = {
+  data: PropTypes.exact({
+    calorieCount: PropTypes.number.isRequired,
+    proteinCount: PropTypes.number.isRequired,
+    carbohydrateCount: PropTypes.number.isRequired,
+    lipidCount: PropTypes.number.isRequired,
+  }).isRequired,
+};

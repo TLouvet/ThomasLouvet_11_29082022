@@ -2,6 +2,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis } from 'recharts';
 import { useGetData } from '../../hooks/useGetData';
 import PropTypes from 'prop-types';
 import { RADAR_CATEGORIES } from '../../constants';
+import { StyledChart } from './UserPerformanceChart.styles';
 
 /**
  * @param {string} id
@@ -19,14 +20,13 @@ export const UserPerformanceChart = ({ id }) => {
   }
 
   return (
-    <RadarChart
+    <StyledChart
       cx={130}
       cy={130}
       outerRadius={'70%'}
       width={258}
       height={263}
       data={data}
-      style={{ backgroundColor: '#282D30', borderRadius: '5px' }}
     >
       <PolarGrid radialLines={false} />
       <PolarAngleAxis dataKey="kind" tick={{
@@ -36,7 +36,7 @@ export const UserPerformanceChart = ({ id }) => {
         strokeWidth: 0.3,
       }} axisLine={false} />
       <Radar dataKey="value" stroke="#8884d8" fill="#FF0101B2" fillOpacity={0.9} />
-    </RadarChart>
+    </StyledChart>
   );
 };
 
