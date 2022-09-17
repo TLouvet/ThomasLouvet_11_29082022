@@ -24,7 +24,7 @@ export const StyledText = styled.p`
 
 export const StyledIconsContainer = styled.div`
 	margin-top: 20vh;
-	margin-bottom: 150px;
+  margin-bottom: 136px;
 `;
 
 export const StyledImageContainer = styled.div`

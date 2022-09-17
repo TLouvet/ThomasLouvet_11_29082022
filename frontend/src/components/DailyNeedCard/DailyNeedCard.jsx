@@ -6,6 +6,14 @@ import {
 } from './DailyNeedCard.styles';
 import PropTypes from 'prop-types';
 
+/**
+ * Single card component displaying small image and key value pair
+ * @param {string} image - the src attribute of image
+ * @param {string} background - the css background color
+ * @param {number} value
+ * @param {string} name
+ * @returns 
+ */
 export const DailyNeedCard = ({ image, background, value, name }) => {
   return (
     <StyledCardContainer>
