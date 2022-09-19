@@ -17,7 +17,7 @@ export const StyledSmallChartsContainer = styled.div`
 	grid-template-columns: repeat(3, 260px);
   justify-content: space-between;
 	margin-top: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	@media screen and (max-width: 1200px) {
 		margin-bottom: 0;
 	}
@@ -58,7 +58,7 @@ export const StyledGraphSection = styled.section`
   margin-right: 30px;
   min-width: 840px;
   width: 75%;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     width: 95%;
   }
   @media screen and (max-width: 1350px){
