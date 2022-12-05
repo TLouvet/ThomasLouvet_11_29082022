@@ -14,6 +14,9 @@ import {
  * @returns
  */
 export const UserGoalsPieChart = ({ score }) => {
+  if (!score) {
+    return null;
+  }
   const data = formatData(score);
 
   return (

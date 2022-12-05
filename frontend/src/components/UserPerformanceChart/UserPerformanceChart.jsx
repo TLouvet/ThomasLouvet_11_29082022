@@ -15,7 +15,7 @@ export const UserPerformanceChart = ({ id }) => {
     kind: RADAR_CATEGORIES[index],
   }));
 
-  if (isLoading) {
+  if (isLoading || data.length === 0) {
     return null;
   }
 

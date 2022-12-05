@@ -17,7 +17,7 @@ export const useGetData = (id, path) => {
         setData(r.data);
         setIsLoading(false);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => { console.log(err); setIsLoading(false) });
   }, [id, path]);
 
   return { data, isLoading };

@@ -25,7 +25,7 @@ export const UserSessionsMeanChart = ({ id }) => {
   const { data, isLoading } = useGetData(id, 'average-sessions');
   const [currentX, setCurrentX] = useState(8);
 
-  if (isLoading) {
+  if (isLoading || !data.sessions) {
     return null;
   }
 

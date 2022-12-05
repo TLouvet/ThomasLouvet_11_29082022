@@ -1,5 +1,5 @@
 import { Header } from '../components/Header';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { VerticalBar } from '../components/VerticalBar';
 import { useGetData } from '../hooks/useGetData';
 import { UserPerformanceChart } from '../components/UserPerformanceChart';
@@ -15,9 +15,11 @@ export const Dashboard = () => {
   const { id } = useParams();
   const { data: user, isLoading } = useGetData(id);
   const goodScore = user?.score || user?.todayScore; // Data has different format between different users
-
+  const navigate = useNavigate();
   if (!id || isLoading) {
     return <div></div>;
+  } else if (!user?.id) {
+    navigate('/404');
   }
 
   return (

@@ -25,7 +25,7 @@ export const DailyActivityChart = ({ id }) => {
     { yAxisId: 'left', dataKey: 'calories', fill: '#E60000' },
   ];
 
-  if (isLoading) {
+  if (isLoading || !dataset.sessions) {
     return null;
   }
 
