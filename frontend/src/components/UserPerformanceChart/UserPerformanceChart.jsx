@@ -1,5 +1,5 @@
 import { Radar, PolarGrid, PolarAngleAxis } from 'recharts';
-import { useGetData } from '../../hooks/useGetData';
+import { useGetData } from '../../services/useGetData';
 import PropTypes from 'prop-types';
 import { RADAR_CATEGORIES } from '../../constants';
 import { StyledChart } from './UserPerformanceChart.styles';

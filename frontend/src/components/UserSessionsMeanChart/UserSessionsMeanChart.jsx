@@ -8,7 +8,7 @@ import {
   ReferenceArea,
 } from 'recharts';
 import { DAYS } from '../../constants';
-import { useGetData } from '../../hooks/useGetData';
+import { useGetData } from '../../services/useGetData';
 import {
   StyledChartTitle,
   StyledContainer,

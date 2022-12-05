@@ -1,7 +1,7 @@
 import { Header } from '../components/Header';
 import { useNavigate, useParams } from 'react-router-dom';
 import { VerticalBar } from '../components/VerticalBar';
-import { useGetData } from '../hooks/useGetData';
+import { useGetData } from '../services/useGetData';
 import { UserPerformanceChart } from '../components/UserPerformanceChart';
 import { DailyActivityChart } from '../components/DailyActivityChart';
 import { UserGoalsPieChart } from '../components/UserGoalsPieChart';

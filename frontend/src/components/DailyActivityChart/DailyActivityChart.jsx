@@ -7,7 +7,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import { useGetData } from '../../hooks/useGetData';
+import { useGetData } from '../../services/useGetData';
 import { StyledBarChart } from './DailyActivityChart.styles';
 import PropTypes from 'prop-types';
 import { RenderTooltip } from './RenderTooltip';
